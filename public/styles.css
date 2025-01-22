@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  padding: 0 16px;
+  background-color: #52062b;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+}
+
+header {
+  background-color: #52062bce;
+  backdrop-filter: initial;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  z-index: -1;
+  user-select: none;
+}
+
+footer p {
+  color: #76757560;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.6em;
+  margin-bottom: 16px;
+  color: #ff9131;
+  font-weight: 900;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  background-color: transparent;
+  float: right;
+  margin-right: 10px;
+  color: #f40616;
+  border: none;
+  width: 14px;
+  height: 21px;
+  cursor: pointer;
+  outline: none;
+}
+
+.note button:hover {
+  opacity: 0.7;
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-note button {
+  position: absolute;
+  right: 29px;
+  bottom: -24px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  header {
+    width: 100vw;
+    margin: auto;
+  }
+
+  header h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  form.create-note {
+    width: 95vw;
+    max-width: 100%;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .note {
+    width: 90vw;
+    margin: 10px auto;
+    float: none;
+  }
+
+  .note h1 {
+    font-size: 1.6em;
+    margin-bottom: 11px;
+    color: #ff9131;
+    text-align: center;
+  }
+
+  .note p {
+    font-size: 1.3em;
+    margin: 0 5%;
+  }
+
+  .note button {
+    float: none;
+    display: block;
+    margin: 10px auto 0;
+  }
+
+  form.create-note button {
+    right: 28px;
+    bottom: -30px;
+    width: 46px;
+    height: 46px;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+}
